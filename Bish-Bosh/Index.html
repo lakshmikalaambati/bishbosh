@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron text-center m-5 bg-dark text-white">
+     <h1>Bish-Bosh 2.0</h1> 
+     <h6>Bish-Bosh 2.0 is simple webpage application</h6>
+    </div>
+    
+    <div class="container-fluid col-md-4 offset-md-4">
+    <p class="text-center bg-warning"><strong>This application that will list all numbers from 1 to n(loopnumber) given by user with a few exceptions. If the number is evenly divisible by let us say X (first number given by user), it should print Bish. If the number is evenly divisible by let us say Y (secondnumber given by user) it should print Bosh. If the number is evenly divisible by both X and Y it should print out  Bish-Bosh.</strong></p>
+          
+   
+    
+    <div class="row justify-content-center align-items-center">
+      
+       <form>
+        <div class="form-group ">
+        <label for="loopnumber">Loop number</label>
+        <input type="number" class="form-control" id="loopnumberInput" placeholder="Loop number" min="0" max="1000">
+        </div>
+        <div class="form-group">
+        <label for="firstnumber">First division-number</label>
+        <input type="number" class="form-control" id="firstnumberInput" placeholder="First division-number" min="1">
+        </div>
+        <div class="form-group">
+        <label for="secondnumber">Second division-number</label>
+        <input type="number" class="form-control" id="secondnumberInput2" placeholder="Second division-number" min="1">
+        </div>
+      </form>
+    </div>
+     <div class="row justify-content-center align-items-center">
+        <button type="button " class="btn btn-dark btn-sm m-2" onclick="mysubmit()" id="submitbutton" >SUBMIT</button>
+        <button type="reset" class="btn btn-dark btn-sm m-2" onclick="document.location.reload()">RESET</button>
+        </div>
+      <p id="result"></p>
+    
+    
+    </div>  <!--container div-->
+    <footer><small>@Copyright 2019 Design and developed by lakshmi on 28th Novenmber 2019. All Rights Reserved</small></footer> 
+
+     <script src="bishbosh.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
